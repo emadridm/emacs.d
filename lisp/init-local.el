@@ -15,7 +15,8 @@
 
 (require 'init-dictionary)
 
-(global-display-fill-column-indicator-mode -1)
+;; (global-display-fill-column-indicator-mode -1)
+(remove-hook 'prog-mode-hook 'display-fill-column-indicator-mode)
 
 (provide 'init-local)
 ;;; init-local.el ends here
