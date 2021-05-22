@@ -15,7 +15,7 @@
 
 (require 'init-dictionary)
 
-(require 'init-editorconfig-org)
+(require 'init-editorconfig)
 
 ;; (global-display-fill-column-indicator-mode -1)
 (remove-hook 'prog-mode-hook 'display-fill-column-indicator-mode)
