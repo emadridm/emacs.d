@@ -9,5 +9,5 @@
 
 (require 'init-ui-completion)
 
-;; (require 'init-projectile)
+(require 'init-projectile)
 

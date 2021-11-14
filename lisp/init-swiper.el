@@ -56,5 +56,5 @@
 ;; (global-set-key (kbd "C-c t") 'counsel-load-theme)
 ;; (global-set-key (kbd "C-c F") 'counsel-org-file)
 
-(provide 'init-abo-abo)
+(provide 'init-swiper)
 

@@ -17,8 +17,8 @@
 (setq-default truncate-lines t)
 
 ;; Mi globals keys
-(global-set-key (kbd "M-g f") 'find-file-at-point)
-(global-set-key (kbd "M-g u") 'browse-url-at-point)
+(global-set-key (kbd "M-g F") 'find-file-at-point)
+(global-set-key (kbd "M-g U") 'browse-url-at-point)
 
 ;; (setq projectile-create-missing-test-files t)
 
