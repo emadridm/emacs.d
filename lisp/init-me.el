@@ -9,9 +9,9 @@
 ;; Emacs's backup files disable
 (setq make-backup-files nil)
 
-;; (display-pixel-width)
-;; (display-pixel-height)
-(set-face-attribute 'default nil :height 200)
+;; Set font size equal to (display-pixel-height) * 18.2%
+;; (set-face-attribute 'default nil :height 200)
+(set-face-attribute 'default nil :height (round (* (display-pixel-height) 0.182)))
 
 ;; Truncate lines indicator disable.
 (setq-default truncate-lines t)
