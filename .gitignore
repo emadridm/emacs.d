@@ -1,5 +1,8 @@
-**~
+# Ignore everything
+/*
 
-straight/
-f
-auto-save-list/
+!.gitgnore
+!init.el
+
+!/lisp
+
