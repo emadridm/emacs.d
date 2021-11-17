@@ -4,10 +4,14 @@
 (when (version< emacs-version "26.1")
   (message "Your Emacs is old, and some functionality in this config will be disabled. Please upgrade if possible."))
 
+;; Produce backtraces when errors occur: can be helpful to diagnose startup issues
+(setq debug-on-error t)
+
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
 (require 'init-straight)
 (require 'init-core)
+(require 'init-which-key)
 (require 'init-path)
 
 (require 'init-theme)
@@ -17,5 +21,11 @@
 
 (require 'init-projectile)
 
-(require 'init-tide)
+(require 'init-web)
+(require 'init-company)
+(require 'init-typescript)
+
+;; (require 'init-tide)
+(require 'init-lsp)
+
 
