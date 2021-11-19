@@ -50,6 +50,9 @@
 
 ;; Languages
 (require 'init-typescript)
+(require 'init-json)
+
+
 
 (provide 'init)
 
