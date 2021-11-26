@@ -31,6 +31,8 @@
 (require 'init-smartparens)
 (require 'init-which-key)
 (require 'init-ui-completion)
+(require 'init-editorconfig)
+(require 'init-dictionary)
 
 ;; Look & feel
 (require 'init-theme)
@@ -51,7 +53,8 @@
 ;; Languages
 (require 'init-typescript)
 (require 'init-json)
-
+(require 'init-js2)
+(require 'init-rjsx)
 
 
 (provide 'init)
