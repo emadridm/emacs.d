@@ -6,6 +6,7 @@
 
 ;; smartparens config for all ecosystem
 ;; visit: https://github.com/Fuco1/smartparens
+;; https://ebzzry.com/en/emacs-pairs/
 
 ;;; Code:
 

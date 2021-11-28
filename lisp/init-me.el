@@ -16,6 +16,9 @@
 ;; Truncate lines indicator disable.
 (setq-default truncate-lines t)
 
+;; highlight paren matching
+(show-paren-mode 'toggle)
+
 ;; Mi globals keys
 (global-set-key (kbd "M-g F") 'find-file-at-point)
 (global-set-key (kbd "M-g U") 'browse-url-at-point)

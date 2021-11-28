@@ -33,6 +33,7 @@
 (require 'init-ui-completion)
 (require 'init-editorconfig)
 (require 'init-dictionary)
+(require 'init-readonly)
 
 ;; Look & feel
 (require 'init-theme)
