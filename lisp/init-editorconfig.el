@@ -5,6 +5,7 @@
 ;;; Commentary:
 
 ;; Edtiorconfig config for all ecosystem
+;; visit: https://github.com/editorconfig/editorconfig-emacs
 ;; visit: https://editorconfig.org/
 
 ;;; Code:
