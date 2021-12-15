@@ -11,7 +11,8 @@
 
 ;; Set font size equal to (display-pixel-height) * 18.2%
 ;; (set-face-attribute 'default nil :height 200)
-(set-face-attribute 'default nil :height (round (* (display-pixel-height) 0.182)))
+;; (set-face-attribute 'default nil :height (round (* (display-pixel-height) 0.182)))
+(set-face-attribute 'default nil :height (round (* (nth 3 (frame-monitor-attribute 'geometry)) 0.182)))
 
 ;; Truncate lines indicator disable.
 (setq-default truncate-lines t)
