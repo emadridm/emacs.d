@@ -56,6 +56,7 @@
 (require 'init-json)
 (require 'init-js2)
 (require 'init-rjsx)
+(require 'init-rust)
 
 
 (provide 'init)
