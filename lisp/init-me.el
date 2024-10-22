@@ -12,10 +12,13 @@
 ;; Set font size equal to (display-pixel-height) * 12%
 ;; (set-face-attribute 'default nil :height 200)
 ;; (set-face-attribute 'default nil :height (round (* (display-pixel-height) 0.182)))
-(set-face-attribute 'default nil :height (round (* (nth 3 (frame-monitor-attribute 'geometry)) 0.12)))
+(set-face-attribute 'default nil :height (round (* (nth 3 (frame-monitor-attribute 'geometry)) 0.14)))
 
 ;; Truncate lines indicator disable.
 (setq-default truncate-lines t)
+
+;; Prevent extraneus tabs
+(setq-default indent-tabs-mode nil)
 
 ;; highlight paren matching
 (show-paren-mode 'toggle)
