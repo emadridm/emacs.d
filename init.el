@@ -20,7 +20,7 @@
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
 ;; Debug
-(setq debug-on-error t)
+					;(setq debug-on-error t)
 
 ;; Core
 (require 'init-straight)
@@ -50,6 +50,7 @@
 ;; (require 'init-tide)
 (require 'init-lsp)
 (require 'init-yasnippet)
+(require 'init-nvm)
 
 ;; Languages
 (require 'init-typescript)
