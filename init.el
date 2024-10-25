@@ -19,8 +19,9 @@
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
-;; Debug
-					;(setq debug-on-error t)
+;; Debug and Wanings
+(setq debug-on-error t)
+(setq warning-minimum-level :error)
 
 ;; Core
 (require 'init-straight)
