@@ -16,8 +16,11 @@
 (when (version< emacs-version "26.1")
   (message "Your Emacs is old, and some functionality in this config will be disabled. Please upgrade if possible."))
 
-
+;; Bootstrap
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+
+;; Set custom file for variables configured via the interactive 'customize' interface
+(setq custom-file (locate-user-emacs-file "custom.el"))
 
 ;; Debug and Wanings
 (setq debug-on-error t)
@@ -60,6 +63,12 @@
 (require 'init-rjsx)
 (require 'init-rust)
 
+;; ia
+(require 'init-gemini)
+
+;; Load variables configured via the interactive 'customize' interface
+(when (file-exists-p custom-file)
+  (load custom-file))
 
 (provide 'init)
 
