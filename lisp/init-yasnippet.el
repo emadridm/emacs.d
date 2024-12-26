@@ -11,6 +11,7 @@
 
 (straight-use-package 'yasnippet)
 (straight-use-package 'yasnippet-snippets)
+(straight-use-package 'mocha-snippets)
 
 ;; (yas-global-mode 1)
 (require 'yasnippet)
