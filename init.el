@@ -46,7 +46,8 @@
 (require 'init-me)
 
 ;; Programming
-(require 'init-projectile)
+;;(require 'init-projectile)
+(require 'init-project)
 (require 'init-flycheck)
 (require 'init-web)
 (require 'init-company)
