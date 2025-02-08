@@ -24,6 +24,10 @@
 ;;   :init
 ;;   (add-hook 'prog-mode #'yas-minor-mode))
 
+(setq mocha-snippets-string-delimiter "\"")
+(setq mocha-snippets-use-fat-arrows nil)
+;; (setq mocha-snippets-add-space-after-function-keyword t)
+
 (provide 'init-yasnippet)
 
 ;;; init-yasnippet.el ends here
