@@ -1,3 +1,9 @@
+;;; init-lsp.el --- enable the lanaguage server protocol -*- lexical-binding: t -*-
+;; Author: Kiko Madrid
+;;; Commentary:
+;; Put here a commentary
+;;; Code:
+
 (straight-use-package 'lsp-mode)
 (straight-use-package 'lsp-ui)
 
@@ -26,4 +32,11 @@
 ;; (use-package dap-mode)
 ;; (use-package dap-LANGUAGE) to load the dap adapter for your language
 
+;; The path to lsp-mode needs to be added to load-path as well as the
+;; path to the `clients' subdirectory.
+(add-to-list 'load-path (expand-file-name "lib/lsp-mode" user-emacs-directory))
+(add-to-list 'load-path (expand-file-name "lib/lsp-mode/clients" user-emacs-directory))
+
 (provide 'init-lsp)
+
+;;; init-lsp.el ends here
