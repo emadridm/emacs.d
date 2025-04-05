@@ -1,9 +1,7 @@
 ;;; init.el --- Emacs ecosystem -*- lexical-binding: t -*-
-
 ;; Author: Enrique Madrid
 
 ;;; Commentary:
-
 ;; Emacs ecosystem for beginners and KISS principle lovers!
 ;; Dateries not include, It works with photocells.
 
@@ -17,13 +15,16 @@
   (message "Your Emacs is old, and some functionality in this config will be disabled. Please upgrade if possible."))
 
 ;; Bootstrap
-(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+;; (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+(eval-when-compile
+  (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory)))
 
 ;; Set custom file for variables configured via the interactive 'customize' interface
 (setq custom-file (locate-user-emacs-file "custom.el"))
 
 ;; Debug and Wanings
 (setq debug-on-error t)
+(defvar warning-minimum-level)
 (setq warning-minimum-level :error)
 
 ;; Core

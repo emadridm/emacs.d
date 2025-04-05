@@ -4,12 +4,15 @@
 ;; Put here a commentary
 ;;; Code:
 
+(require 'init-straight)
+
 (straight-use-package 'lsp-mode)
 (straight-use-package 'lsp-ui)
 
 (use-package lsp-mode
   :init
   ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
+  (defvar lsp-keymap-prefix)
   (setq lsp-keymap-prefix "C-c l")
   ;; (setq lsp-auto-configure nil)
   :hook (;; replace XXX-mode with concrete major-mode(e. g. python-mode)
