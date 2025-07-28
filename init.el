@@ -65,8 +65,8 @@
 (require 'init-rjsx)
 (require 'init-rust)
 
-;; ia
-(require 'init-gemini)
+;; AI tools
+(require 'init-ai)
 
 ;; Load variables configured via the interactive 'customize' interface
 (when (file-exists-p custom-file)
