@@ -14,15 +14,19 @@
 
 (require 'smartparens-config)
 
-(smartparens-global-mode 1)
-
-;; You may want to try smartparens-strict-mode.
-;; This enforces that pairs are always balanced,
-;; so commands like kill-line keep your code well-formed.
-;; (smartparens-strict-mode)
-
-;; Emacs lisp support
-(sp-local-pair 'emacs-lisp-mode "'" nil :actions nil)
+(use-package smartparens
+  :ensure smartparens  ;; install the package
+  :hook (prog-mode text-mode markdown-mode) ;; add `smartparens-mode` to these hooks
+  :config
+  ;; load default config
+  (require 'smartparens-config)
+  (smartparens-global-mode)
+  ;; You may want to try smartparens-strict-mode.
+  ;; This enforces that pairs are always balanced,
+  ;; so commands like kill-line keep your code well-formed.
+  (smartparens-strict-mode)
+  ;; Emacs lisp support
+  (sp-local-pair 'emacs-lisp-mode "'" nil :actions nil))
 
 (provide 'init-smartparens)
 
