@@ -35,7 +35,7 @@
 ;; Environment
 (require 'init-smartparens)
 (require 'init-which-key)
-(require 'init-ui-completion)
+(require 'init-ui)
 (require 'init-editorconfig)
 (require 'init-dictionary)
 (require 'init-readonly)
@@ -46,8 +46,7 @@
 ;; Me
 (require 'init-me)
 
-;; Programming
-;;(require 'init-projectile)
+;; IDE
 (require 'init-project)
 (require 'init-flycheck)
 (require 'init-web)
@@ -58,7 +57,7 @@
 (require 'init-yasnippet)
 (require 'init-nvm)
 
-;; Languages
+;; Programing languages
 (require 'init-typescript)
 (require 'init-json)
 (require 'init-js2)

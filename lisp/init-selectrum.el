@@ -14,6 +14,4 @@
 ;; intelligent over time
 (prescient-persist-mode +1)
 
-(require 'init-consult)
-
 (provide 'init-selectrum)

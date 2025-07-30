@@ -1,3 +1,13 @@
+;;; init-consult.el --- Consult Package Configuration -*- lexical-binding: t -*-
+
+;; Author: Enrique Madrid
+
+;;; Commentary:
+
+;; My minimal Consult package configuration
+
+;;; Code:
+
 (straight-use-package 'consult)
 
 ;; Example configuration for Consult
@@ -63,15 +73,12 @@
   ;; The :init configuration is always executed (Not lazy)
   :init
 
-  ;; Optionally configure the register formatting. This improves the register
-  ;; preview for `consult-register', `consult-register-load',
-  ;; `consult-register-store' and the Emacs built-ins.
-  (setq register-preview-delay 0.5
-        register-preview-function #'consult-register-format)
-
-  ;; Optionally tweak the register preview window.
-  ;; This adds thin lines, sorting and hides the mode line of the window.
+  ;; Tweak the register preview for `consult-register-load',
+  ;; `consult-register-store' and the built-in commands.  This improves the
+  ;; register formatting, adds thin separator lines, register sorting and hides
+  ;; the window mode line.
   (advice-add #'register-preview :override #'consult-register-window)
+  (setq register-preview-delay 0.5)
 
   ;; Use Consult to select xref locations with preview
   (setq xref-show-xrefs-function #'consult-xref
@@ -90,7 +97,7 @@
   ;; :preview-key on a per-command basis using the `consult-customize' macro.
   (consult-customize
    consult-theme :preview-key '(:debounce 0.2 any)
-   consult-ripgrep consult-git-grep consult-grep
+   consult-ripgrep consult-git-grep consult-grep consult-man
    consult-bookmark consult-recent-file consult-xref
    consult--source-bookmark consult--source-file-register
    consult--source-recent-file consult--source-project-recent-file
@@ -107,3 +114,5 @@
   )
 
 (provide 'init-consult)
+
+;;; init-consult.el ends here
