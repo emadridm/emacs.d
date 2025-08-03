@@ -48,14 +48,13 @@
 
 ;; IDE
 (require 'init-project)
+(require 'init-lsp)
 (require 'init-flycheck)
-(require 'init-web)
 (require 'init-company)
 (require 'init-apheleia)
-;; (require 'init-tide)
-(require 'init-lsp)
 (require 'init-yasnippet)
 (require 'init-nvm)
+(require 'init-web)
 
 ;; Programing languages
 (require 'init-typescript)

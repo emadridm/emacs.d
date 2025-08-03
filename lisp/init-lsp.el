@@ -1,7 +1,10 @@
-;;; init-lsp.el --- enable the lanaguage server protocol -*- lexical-binding: t -*-
+;;; init-lsp.el --- Laguange Server Protocol Configuration -*- lexical-binding: t -*-
+
 ;; Author: Kiko Madrid
+
 ;;; Commentary:
 ;; Put here a commentary
+
 ;;; Code:
 
 (require 'init-straight)
