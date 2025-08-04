@@ -9,6 +9,7 @@
 ;;; Code:
 
 (straight-use-package 'consult)
+(straight-use-package 'consult-flycheck)
 
 ;; Example configuration for Consult
 (use-package consult

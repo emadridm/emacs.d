@@ -37,6 +37,7 @@
 (require 'init-which-key)
 (require 'init-ui)
 (require 'init-editorconfig)
+(require 'init-grammar)
 (require 'init-dictionary)
 (require 'init-readonly)
 
