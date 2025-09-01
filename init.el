@@ -40,6 +40,7 @@
 (require 'init-grammar)
 (require 'init-dictionary)
 (require 'init-readonly)
+(require 'init-visual-fill-column)
 
 ;; Look & feel
 (require 'init-theme)

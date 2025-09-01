@@ -16,7 +16,7 @@
 (set-face-attribute 'default nil :height 160)
 
 ;; Truncate lines indicator disable.
-(setq-default truncate-lines t)
+;; (setq-default truncate-lines t)
 
 ;; Prevent extraneus tabs
 (setq-default indent-tabs-mode nil)
