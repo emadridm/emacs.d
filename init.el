@@ -50,6 +50,7 @@
 ;; IDE
 (require 'init-project)
 (require 'init-lsp)
+(require 'init-vale)
 (require 'init-flycheck)
 (require 'init-company)
 (require 'init-apheleia)
@@ -63,6 +64,9 @@
 (require 'init-js2)
 (require 'init-rjsx)
 (require 'init-rust)
+
+;; My second brain
+(require 'init-org-roam)
 
 ;; AI tools
 (require 'init-ai)
