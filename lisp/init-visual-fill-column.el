@@ -9,11 +9,21 @@
 
 ;;; Code:
 
-(straight-use-package
- '(visual-fill-column
-   :type git
-   :host codeberg
-   :repo "/joostkremers/visual-fill-column"))
+;; (straight-use-package
+;;  '(visual-fill-column
+;;    :type git
+;;    :host codeberg
+;;    :repo "/joostkremers/visual-fill-column"))
+
+(use-package visual-fill-column
+  :straight (:type git
+	     :host codeberg
+	     :repo "/joostkremers/visual-fill-column")
+  :ensure t
+  :hook (org-mode . (lambda ()
+                      (setq visual-fill-column-center-text t)
+                      (text-scale-set 1))))
+
 
 (global-visual-fill-column-mode 1)
 (global-visual-line-mode 1)

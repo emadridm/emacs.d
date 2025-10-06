@@ -67,6 +67,7 @@
 (require 'init-rust)
 
 ;; My second brain
+(require 'init-org-mode)
 (require 'init-org-roam)
 
 ;; AI tools
