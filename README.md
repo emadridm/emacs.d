@@ -11,5 +11,3 @@ M-x customize-variable gemini-api-token
 
 ## Grammar
 
-
-https://aistudio.google.com/app/apikey
