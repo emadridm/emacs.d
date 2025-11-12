@@ -65,6 +65,7 @@
 (require 'init-js2)
 (require 'init-rjsx)
 (require 'init-rust)
+(require 'init-yaml)
 
 ;; My second brain
 (require 'init-org-mode)
