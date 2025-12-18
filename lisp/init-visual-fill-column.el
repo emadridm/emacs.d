@@ -17,16 +17,18 @@
 
 (use-package visual-fill-column
   :straight (:type git
-	     :host codeberg
-	     :repo "/joostkremers/visual-fill-column")
+	           :host codeberg
+	           :repo "/joostkremers/visual-fill-column")
   :ensure t
   :hook (org-mode . (lambda ()
                       (setq visual-fill-column-center-text t)
+                      (visual-fill-column-mode)
+                      (visual-line-mode)
                       (text-scale-set 1))))
 
 
-(global-visual-fill-column-mode 1)
-(global-visual-line-mode 1)
+;; (global-visual-fill-column-mode 1)
+;; (global-visual-line-mode 1)
 
 (provide 'init-visual-fill-column)
 
