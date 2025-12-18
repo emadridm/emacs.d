@@ -67,6 +67,9 @@
 (require 'init-rust)
 (require 'init-yaml)
 
+;; Authoring languages
+(require 'init-quarto)
+
 ;; My second brain
 (require 'init-org-mode)
 (require 'init-org-roam)
