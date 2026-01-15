@@ -51,8 +51,8 @@
 ;; IDE
 (require 'init-project)
 (require 'init-lsp)
-(require 'init-vale)
 (require 'init-flycheck)
+(require 'init-vale)
 (require 'init-company)
 (require 'init-apheleia)
 (require 'init-yasnippet)
