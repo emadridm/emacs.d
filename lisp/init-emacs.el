@@ -8,7 +8,8 @@
 
 ;;; Code:
 
-(setq package-install-upgrade-built-in t)
+;; (setq package-install-upgrade-built-in t)
+;; (setq package-enable-at-startup nil)
 
 (provide 'init-emacs)
 
