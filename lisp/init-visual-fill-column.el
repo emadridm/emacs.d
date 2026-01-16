@@ -24,7 +24,12 @@
                       (setq visual-fill-column-center-text t)
                       (visual-fill-column-mode)
                       (visual-line-mode)
-                      (text-scale-set 1))))
+                      (text-scale-set 1)))
+  :hook (markdown-mode . (lambda ()
+                           (setq visual-fill-column-center-text t)
+                           (visual-fill-column-mode)
+                           (visual-line-mode)
+                           (text-scale-set 1))))
 
 
 ;; (global-visual-fill-column-mode 1)

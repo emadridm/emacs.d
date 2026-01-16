@@ -28,11 +28,13 @@
 (setq warning-minimum-level :error)
 
 ;; Core
+(require 'init-emacs)
 (require 'init-straight)
 (require 'init-use-package)
 (require 'init-path)
 
 ;; Environment
+(require 'init-magit)
 (require 'init-smartparens)
 (require 'init-which-key)
 (require 'init-ui)

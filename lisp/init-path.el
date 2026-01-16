@@ -1,5 +1,18 @@
+;;; init-path.el --- My configuration path -*- lexical-binding: t -*-
+
+;; Author: Enrique Madrid
+
+;;; Commentary:
+
+;; This hack solve some issues.
+
+;;; Code:
+
 ;; https://emacs.stackexchange.com/questions/34201/emacs-cant-find-node-when-node-was-installed-using-nvm
-;; (setq exec-path (append exec-path '("~/.nvm/versions/node/v6.3.0/bin")))
+;; (setq exec-path (append exec-path
+;; '("~/.nvm/versions/node/v6.3.0/bin")))
+
+(require 'straight)
 
 (straight-use-package 'exec-path-from-shell)
 
@@ -12,3 +25,6 @@
   (exec-path-from-shell-initialize))
 
 (provide 'init-path)
+
+;;; init-path.el ends here
+
