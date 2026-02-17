@@ -23,15 +23,19 @@
 (setq custom-file (locate-user-emacs-file "custom.el"))
 
 ;; Debug and Wanings
-(setq debug-on-error t)
-(defvar warning-minimum-level)
-(setq warning-minimum-level :error)
+;; (setq debug-on-error t)
+;; (defvar warning-minimum-level)
+;; (setq warning-minimum-level :error)
 
 ;; Core
 (require 'init-emacs)
 (require 'init-straight)
 (require 'init-use-package)
 (require 'init-path)
+
+;; My second brain
+(require 'init-org-mode)
+(require 'init-org-roam)
 
 ;; Environment
 (require 'init-magit)
@@ -71,10 +75,6 @@
 
 ;; Authoring languages
 (require 'init-quarto)
-
-;; My second brain
-(require 'init-org-mode)
-(require 'init-org-roam)
 
 ;; AI tools
 (require 'init-ai)
