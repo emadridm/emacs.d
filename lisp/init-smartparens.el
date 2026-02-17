@@ -10,9 +10,9 @@
 
 ;;; Code:
 
-(straight-use-package 'smartparens)
+(require 'straight)
 
-(require 'smartparens-config)
+(straight-use-package 'smartparens)
 
 (use-package smartparens
   :ensure smartparens  ;; install the package

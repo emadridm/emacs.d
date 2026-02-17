@@ -8,6 +8,8 @@
 
 ;;; Code:
 
+(require 'straight)
+
 (straight-use-package 'project)
 (straight-use-package 'projectile)
 
