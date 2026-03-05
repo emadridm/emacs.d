@@ -13,6 +13,8 @@
 
 (require 'straight)
 
+(require 'init-transient)
+
 (straight-use-package 'gptel)
 
 (require 'auth-source)
@@ -51,6 +53,11 @@
 ;;   :host "localhost:11434"               ;Where it's running
 ;;   :stream t                             ;Stream responses
 ;;   :models '(deepseek-r1:latest))        ;List of models
+
+(gptel-make-ollama "Ollama" ;Any name of your choosing
+  :host "localhost:11434"   ;Where it's running
+  :models '(qwen2.5:latest) ;List of models
+  :stream t)                ;Stream responses
 
 (provide 'init-gptel)
 
