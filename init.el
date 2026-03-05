@@ -38,6 +38,7 @@
 (require 'init-org-roam)
 
 ;; Environment
+(require 'init-transient)
 (require 'init-magit)
 (require 'init-smartparens)
 (require 'init-which-key)

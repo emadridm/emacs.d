@@ -10,6 +10,8 @@
 
 (require 'straight)
 
+(require 'init-transient)
+
 (straight-use-package 'magit)
 
 (provide 'init-magit)
