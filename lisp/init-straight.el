@@ -31,6 +31,16 @@
       (eval-print-last-sexp)))
   (load bootstrap-file nil 'nomessage))
 
+;; To ensure your use-package declarations always default to using
+;; straight.el (and to keep your init.el clean), add the following
+;; configuration to your init.el right after you bootstrap
+;; straight.el:
+
+;; Force use-package to use straight.el by default
+(setq straight-use-package-by-default t)
+;; Load use-package
+(straight-use-package 'use-package)
+
 (provide 'init-straight)
 
 ;;; init-straight.el ends here
