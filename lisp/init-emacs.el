@@ -1,15 +1,17 @@
-;;; init-emacs.el --- My minimal Emacs core configuration -*- lexical-binding: t -*-
+;;; init-emacs.el --- My Emacs's built-in default packages configuration -*- lexical-binding: t -*-
 
 ;; Author: Enrique Madrid
 
 ;;; Commentary:
 
-;; My minimal Emacs core configuration file.
+;; My Emacs' built-in default packages configuration.
 
 ;;; Code:
 
-;; (setq package-install-upgrade-built-in t)
-;; (setq package-enable-at-startup nil)
+(use-package sql
+  :config
+  (setq sql-pop-to-buffer-after-send-region nil)
+  )
 
 (provide 'init-emacs)
 

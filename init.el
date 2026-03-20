@@ -28,13 +28,13 @@
 ;; (setq warning-minimum-level :error)
 
 ;; Core
-(require 'init-emacs)
 (require 'init-straight)
-(require 'init-use-package)
 (require 'init-path)
+(require 'init-emacs)
 
 ;; My second brain
 (require 'init-org-mode)
+;; (require 'init-org-ref)
 (require 'init-org-roam)
 
 ;; Environment
@@ -48,6 +48,7 @@
 (require 'init-dictionary)
 (require 'init-readonly)
 (require 'init-visual-fill-column)
+(require 'init-gt)
 
 ;; Look & feel
 (require 'init-theme)

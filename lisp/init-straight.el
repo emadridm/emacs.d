@@ -37,7 +37,9 @@
 ;; straight.el:
 
 ;; Force use-package to use straight.el by default
+;; (setq straight-use-package-version 'straight) ;default value
 (setq straight-use-package-by-default t)
+
 ;; Load use-package
 (straight-use-package 'use-package)
 
