@@ -38,6 +38,8 @@
   ;; https://ctan.org/pkg/tabularx.
   (add-to-list 'org-latex-packages-alist '("" "tabularx" t))
   (add-to-list 'org-latex-packages-alist '("" "adjustbox" t))
+  (add-to-list 'org-latex-packages-alist '("" "longtable" t))
+  (add-to-list 'org-latex-packages-alist '("" "booktabs" t))
   )
 
 ;; Enabled this command to insert a blank page after the toc.

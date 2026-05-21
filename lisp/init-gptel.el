@@ -39,7 +39,20 @@
         gptel-expert-commands t
         gptel-default-mode 'org-mode))
 
-;; LLM backends
+;; LLM responses settings
+(use-package gptel
+  :commands (gptel gptel-send)
+  :config
+  (add-hook 'gptel-post-response-functions
+            (lambda (start end)
+              (when (derived-mode-p 'org-mode)
+                (save-excursion
+                  (save-restriction
+                    (narrow-to-region start end)
+                    (goto-char (point-min))
+                    (org-map-entries #'org-demote)))))))
+
+;; LLM backends settings
 (use-package gptel
   :after gptel auth-source
   :config

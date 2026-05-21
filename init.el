@@ -37,6 +37,8 @@
 ;; (require 'init-org-ref)
 (require 'init-org-roam)
 
+(require 'init-gnuplot)
+
 ;; Environment
 (require 'init-transient)
 (require 'init-magit)
