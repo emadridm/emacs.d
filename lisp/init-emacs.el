@@ -10,8 +10,11 @@
 
 (use-package sql
   :config
-  (setq sql-pop-to-buffer-after-send-region nil)
-  )
+  (setq sql-pop-to-buffer-after-send-region nil))
+
+(use-package compat
+  :ensure t
+  :straight (compat :host github :repo "emacs-compat/compat"))
 
 (provide 'init-emacs)
 

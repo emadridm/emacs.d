@@ -10,11 +10,7 @@
 
 (require 'straight)
 
-;; Add `(require 'cl-lib)` to your `~/.emacs` or `~/.emacs.d/init.el` file.
-
-(straight-use-package 'cl-lib)
 (straight-use-package 'gnuplot)
-;; (straight-use-package 'gnuplot-mode)
 
 (provide 'init-gnuplot)
 
