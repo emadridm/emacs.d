@@ -16,6 +16,7 @@
  'org-babel-load-languages
  '((shell . t)
    (R . t)
+   (gnuplot . t)
    (sql . t)
    (sqlite . t)
    (python . t)

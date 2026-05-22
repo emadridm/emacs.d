@@ -9,10 +9,14 @@
 
 ;;; Code:
 
-(straight-use-package 'flycheck)
-
 (use-package flycheck
-  :init (global-flycheck-mode))
+  :straight (flycheck
+             :type git
+             :host github
+             :repo "flycheck/flycheck")
+  :init (global-flycheck-mode)
+  :config
+  (setq-default flycheck-disabled-checkers '(org-lint)))
 
 (provide 'init-flycheck)
 

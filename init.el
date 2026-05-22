@@ -23,21 +23,23 @@
 (setq custom-file (locate-user-emacs-file "custom.el"))
 
 ;; Debug and Wanings
-;; (setq debug-on-error t)
-;; (defvar warning-minimum-level)
-;; (setq warning-minimum-level :error)
+(setq debug-on-error t)
+(defvar warning-minimum-level)
+(setq warning-minimum-level :error)
 
 ;; Core
 (require 'init-straight)
 (require 'init-path)
 (require 'init-emacs)
 
-;; My second brain
+;; Authoring languages
 (require 'init-org-mode)
 ;; (require 'init-org-ref)
-(require 'init-org-roam)
-
 (require 'init-gnuplot)
+(require 'init-quarto)
+
+;; My second brain
+(require 'init-org-roam)
 
 ;; Environment
 (require 'init-transient)
@@ -76,9 +78,6 @@
 (require 'init-rjsx)
 (require 'init-rust)
 (require 'init-yaml)
-
-;; Authoring languages
-(require 'init-quarto)
 
 ;; AI tools
 (require 'init-ai)
